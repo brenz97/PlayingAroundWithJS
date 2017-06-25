@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title> Brendon M. Zhang </title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<link rel="icon" href="images/icon.png">
+	</head>
+
+	<body>
+		<div id="title"> PathFinder </div>
+    	</br>
+    	<hr>
+    	<div id="smallText">
+    		CPS305 Data Structures and Algorithms Assignment </br>
+    		Find a path in an n by m matrix from a start cell to an end cell using certain restrictions/rules</br>	
+    		If there is a path print the path, if there is not, print 'NO PATHS'
+    	</div>
+    	<hr>
+    	<div id="smallText"> 
+    		Example
+    		<table align="center" style="font-family: monospace;">
+    			<tr>
+    				<td>Input</td>
+    				<td></td><td></td>
+    				<td>Output</td>
+    			</tr>
+    			<tr>
+    				<td>4 4</td>
+    				<td></td><td></td>
+    				<td></td>
+    			</tr>
+    			<tr>
+    				<td>osoo</td>
+    				<td></td><td></td>
+    				<td>osoo</td>
+    			</tr>
+    			<tr>
+    				<td>o..o</td>
+    				<td></td><td></td>
+    				<td>o**o</td>
+    			</tr>
+    			<tr>
+    				<td>oo.o</td>
+    				<td></td><td></td>
+    				<td>oo*o</td>
+    			</tr>
+    			<tr>
+    				<td>e..o</td>
+    				<td></td><td></td>
+    				<td>e**o</td>
+    			</tr>
+    		</table>
+    	</div>
+
+    	<hr>
+
+    	<div id="smallText">
+    		<br>
+    		Input Format: <br>
+    		The number of rows and columns separated by a space,<br>
+    		then n lines of m columns<br><br>
+    		<textarea cols="20" rows="3" id="inputValues"></textarea>
+    		<br> <input type="submit" name="solve" onclick="main()">
+    		<br> <hr> <br>
+    		Solution
+    		<br><br>
+    		<p id="original" style="font-family: monospace;"> </p>
+
+    		<p id="out" style="font-family: monospace;"> </p>
+    		<script type="text/javascript" src="pathfinder.js"></script>
+    	</div>
+	</body>
+
+</html>

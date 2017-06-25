@@ -1,0 +1,44 @@
+<DOCTYPE! HTML>
+
+<html>
+	<head>
+		<title> Ball </title>
+	</head>
+
+	<body style="background-color: black">
+		
+		<canvas 
+			id="board" 
+			width="800" 
+			height="300" 
+			style="margin-top: 10%; 
+					margin-left: 17.5%;
+					border: solid white 1px">
+		</canvas>
+		<script>
+			let cheight = 0.7*window.innerheight;
+			let cwidth = 0.7*window.innerwidth;
+			let c = document.getElementById("board");
+
+			document.getElementById("board").height = cheight;
+			document.getElementById("board").width = cwidth;
+			document.getElementById("board").background-color = white;
+		</script>
+		<br>
+		<!--
+		<form style="color: white; margin-right: 45%; text-align: right">
+			X Position: 
+			<input type="text" id="xPosition" size="3">
+			<br>
+			Y Position: 
+			<input type="text" id="yPosition" size="3">
+			<br>
+			Radius:	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="text" id="radius" size="3";>
+			<br>
+			<input style="margin-right: 4%" type="button" id="add" value="Add Ball" onclick="addBall();">
+		</form>
+		-->
+		<script src="ball.js" type="text/javascript"></script>
+	</body>
+</html>
